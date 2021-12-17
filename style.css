@@ -3,12 +3,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
 .header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 46px;
+    top: 0;
     grid-column-start: 1;
     grid-column-end: 3;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #FFDEC0;
 }
 
 .logo {
@@ -23,6 +28,29 @@
   grid-gap: 32px;
   align-items: center;
 }
+
+
+
+.shopping_cart {
+  width: 48px;
+  height: 48px;
+}
+
+.items_in_cart {
+  position: relative;
+  left: 28px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  border-radius: 20px;
+  border: solid;
+  border-color: #FFDEC0;
+  border-width: 2px;
+  text-align: center;
+}
+
+
 
 .main_page_body {
   grid-column-start: 1;
@@ -64,21 +92,32 @@
 .default_text {
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
+  color: #333333;
 }
 
 .large_text {
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
+  color: #333333;
+}
+
+.counter_items_in_cart {
+  position: relative;
+  top: -44px;
+  font-size: 16px;
+  color: #FFDEC0;
 }
 
 h1 {
   font-family: 'Gabriela', serif;
   font-size: 80px;
+  color: #333333;
 }
 
 h2 {
   font-family: 'Gabriela', serif;
   font-size: 40px;
+  color: #333333;
 }
 
 a:visited { text-decoration: none }
@@ -97,6 +136,10 @@ input[type=button] {
   font-size: 24px;
   text-decoration: none;
   cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #FFDEC0;
 }
 
 .default_background {

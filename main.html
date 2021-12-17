@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type = "text/javascript">
+      <!--
+        var count = 0
+        function plus() {
+          count++
+          document.getElementById("i").innerHTML = count;
+        }
+      //-->
+    </script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="default_background">
@@ -12,7 +21,14 @@
         <p class="default_text">Our products</p>
         <p class="default_text">Contacts</p>
         <p class="default_text">Login or Register</p>
-        <img src="source/buy.svg" alt="Shopping cart">
+        <div class="shopping_cart">
+          <img src="source/buy.svg" alt="Shopping cart">
+          <div class="items_in_cart">
+            <div class='default_text counter_items_in_cart'>
+              <div id='i'>i</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class='main_page_body'>
@@ -23,19 +39,19 @@
       <div class='item'>
         <h2>Triefty set</h2>
         <p class="default_text">Chair + desk</p>
-        <input type="button" value="Add to shopping cart"><br>
+        <input type="button" onclick = "plus()" value="Add to shopping cart"><br>
         <a class="default_text" padding-top="16px">View set</a>
       </div>
       <div class='item'>
         <h2>Gaming set</h2>
         <p class="default_text">Gaimer's hair + desk</p>
-        <input type="button" value="Add to shopping cart"><br>
+        <input type="button" onclick = "plus()" value="Add to shopping cart"><br>
         <a class="default_text" padding-top="16px">View set</a>
       </div>
       <div class='item'>
         <h2>Standing set</h2>
         <p class="default_text">Chair + sit/stay desk</p>
-        <input type="button" value="Add to shopping cart"><br>
+        <input type="button" onclick = "plus()" value="Add to shopping cart"><br>
         <a class="default_text" padding-top="16px">View set</a>
       </div>
     </div>
